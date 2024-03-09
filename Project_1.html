@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;color:orange;">CRUD OPRATIONS (JavaScript API)</h1>
+    <div id="container">
+      
+        <div id="right">
+            <form action="">
+                <table>
+                    <tr>
+                        <td ><label for="">Name</label></td>
+                        <td><input type="text" placeholder="Enter Name" id="name"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="">Email</label></td>
+                        <td><input type="email" placeholder="Enter Email" id="email"></td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td><label for="">Phone number</label></td>
+                        <td><input type="text" placeholder="Enter Phone number" id="phno"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="">Department</label></td>
+                        <td><select name="dept" id="dept">
+                                <option value="HR">HR</option>
+                                <option value="TESTING">TESTING</option>
+                                <option value="MANAGER">MANAGER</option>
+                                <option value="DEVLOPER">DEVLOPER</option>
+                            </select></td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+    
+                        </td>
+                    </tr>
+                </table>
+                
+            </form>
+            <div id="buttons">
+                <button  id="add">ADD</button>
+                <button id="display">DISPLAY</button>
+            </div>
+        </div>
+
+        <div id="left">
+           
+              
+            <table border="1">
+               
+
+                    <tr>
+                       <thead>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>phone_number</th>
+                        <th>Department</th>
+                        <th colspan="2">Options</th>
+                       </thead>
+                    </tr>
+                    <tfoot id="table">
+                        
+                    </tfoot>
+                </table>
+          
+        </div>
+    </div>
+    <script src="./Fetch_data.js"></script>
+</body>
+
+</html>
